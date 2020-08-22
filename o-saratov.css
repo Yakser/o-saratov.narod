@@ -1,0 +1,139 @@
+BODY
+{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	text-align : justify;
+	background-color : #FFFFFF;
+	margin-left : 0;
+	margin-top : 0;
+ 	scrollbar-face-color: #88aa88;
+	scrollbar-shadow-color: #88aa88;
+	scrollbar-highlight-color: #88aa88;
+	scrollbar-3dlight-color: #336633;
+	scrollbar-darkshadow-color: #336633;
+	scrollbar-track-color: #ddefdd;
+	scrollbar-arrow-color: #0D6FAB;
+}
+
+H1
+{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : large;
+	font-style : normal;
+	text-align : center;
+	color : #000066;
+	font-weight: normal;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+H2
+{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : x-small;
+	font-style : normal;
+	text-align : center;
+	color : red;
+	font-weight: bold;
+}
+
+H3
+{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : x-small;
+	font-style : normal;
+	text-align : center;
+	color : black;
+	font-weight: bold;
+}
+
+NONE
+{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : x-small;
+	font-style : normal;
+	text-align : left;
+	color: black;
+	font-weight: normal;
+}
+
+TD
+{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : x-small;
+	font-style : normal;
+	text-align : justify;
+	color: black;
+	font-weight: normal;
+}
+
+.navigation
+{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : x-small;
+	text-align : left;
+	color: black;
+	font-weight: normal;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	
+}
+
+.detail
+{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : xx-small;
+	font-style : normal;
+	text-align : left;
+	color: black;
+	font-weight: normal;
+}
+
+
+.article-header {
+
+	color: red;
+	font-size: 14px;
+}
+.article a {
+        font-weight: bold;
+}
+
+.time {
+
+	color: red;
+        font-weight: bold;
+}
+
+.time:before {
+	content: "";
+	display: block;
+	background-color: #000;
+	height: 2px;
+	width: 150px;
+	margin-right: 10px;
+
+}
+
+.time:after {
+        content: "";
+	display: block;
+	background-color: #000;
+	height: 2px;
+	width: 150px;
+	margin-left: 10px;
+
+}
+
+A:link 		{
+	color : blue;
+	text-decoration : none;
+}
+A:visited	{ color : blue; text-decoration : none; }
+A:active	{
+	color : blue;
+	text-decoration : underline;
+}
+A:hover	{
+	color : blue;
+	text-decoration : underline;
+}
