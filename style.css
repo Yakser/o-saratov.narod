@@ -30,8 +30,10 @@ html, body {
 }
 
 .wrapper {
+
 	display: flex;
 	height: 100%;
+
 }
 .block {
 	display: none;
@@ -145,8 +147,7 @@ main {
 	cursor: default;
 }
 
-h1{
-
+h1 {
 	display: inline-block;
 	font-size: 56px;
 	color: #FF8C00;
@@ -358,6 +359,7 @@ span#slider-left {
 .slider .slider-block {
 
 	width: 600px;
+	height: 337.5px;
 	float: left;
 	position: relative;
 	font-size: .8em;
