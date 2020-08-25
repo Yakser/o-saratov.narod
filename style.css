@@ -62,9 +62,21 @@ aside {
 	
 	width: 200px;
 	
-	padding:10px;
+	padding:20px;
+	padding-right: 0;
+	padding-bottom: 0;
 	/*border-right: 1px solid #0063B1;*/
 	position: fixed;
+
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+
+nav	{
+	flex: 1 5 auto;
 }
 
 .main-menu {
@@ -81,32 +93,40 @@ aside {
 }
 
 
-.weather-informer {
+/*.weather-informer {
 
 	border: 1px solid #0063B1;
 	width: 190px;
 	border-radius: 5px;
 	padding: 5px;
 	margin-bottom: 10px;
-
-
-}
+}*/
 
 
 .ads {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-top: 20px;
+
+	flex: 1 1 auto;
+}
+
+.ads a {
+
+	max-width: 180px;
+	flex: 1 1 10px;
 }
 
 .ads img {
 
-	width: 180px;
-	margin-top: 10px;
+	width: 100%;
+	
 	border-radius: 15px;
 	padding: 10px;
 	transition: all .3s ease-in-out;
+
 }
 
 .ads img:hover {
@@ -478,10 +498,6 @@ mark {
 	margin-top: 50px
 }
 
-
-@media (max-width: 1000px) {
-	.slider-block {
-		
-		
-	}
+@media (max-height: 800px) {
+	aside { position: static; }
 }
