@@ -60,7 +60,7 @@ a:hover {
 
 aside {
 	
-	width: 200px;
+	/*width: 220px;*/
 	
 	padding:20px;
 	padding-right: 0;
@@ -68,15 +68,12 @@ aside {
 	/*border-right: 1px solid #0063B1;*/
 	position: fixed;
 
-	height: 100%;
+	height: calc(100% - 2px);
+
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	
-}
 
-nav	{
-	flex: 1 5 auto;
+
 }
 
 .main-menu {
@@ -93,6 +90,7 @@ nav	{
 }
 
 
+
 /*.weather-informer {
 
 	border: 1px solid #0063B1;
@@ -104,27 +102,26 @@ nav	{
 
 
 .ads {
+
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin-top: 20px;
-
-	flex: 1 1 auto;
+	justify-content: space-around;
+	margin-top: 50px;
+	
 }
 
 .ads a {
 
 	max-width: 180px;
-	flex: 1 1 10px;
+	flex: 1 2 auto;
+	margin: 10px;
+	margin-left: 0;
 }
 
 .ads img {
 
 	width: 100%;
-	
 	border-radius: 15px;
-	padding: 10px;
 	transition: all .3s ease-in-out;
 
 }
@@ -498,6 +495,9 @@ mark {
 	margin-top: 50px
 }
 
-@media (max-height: 800px) {
-	aside { position: static; }
-}
+/*@media screen and (max-height: 800px) {
+	aside {
+		position: static;
+		width: 200px;
+	}
+}*/
