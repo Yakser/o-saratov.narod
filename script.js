@@ -240,4 +240,3 @@ for(let i = 0; i < locationsList.length; i++){
 
 	});
 }
-
