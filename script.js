@@ -186,3 +186,58 @@ for(let i = 0; i < sliderBlocks.length; i++){
 
 	});
 }
+
+
+// MAPS NAVIGATION
+
+let locationsList = document.querySelectorAll(".map-location");
+let mapsBody = document.querySelector(".maps__body");
+let mapsBlocksList = document.querySelectorAll(".map-block");
+let backBtn = document.querySelector(".back-button");
+let emptyMapBlock = document.querySelector(".empty-map-block");
+
+let mapInd = 0;
+
+
+backBtn.addEventListener("click", function() {
+
+		
+		mapsBody.style.display = "block";
+		backBtn.style.display = "none";
+		
+		
+		
+		mapsBlocksList[mapInd].style.display = "none";
+		emptyMapBlock.style.display = "none";
+	
+		
+
+		
+
+
+	
+	});
+
+
+for(let i = 0; i < locationsList.length; i++){
+
+	locationsList[i].addEventListener("click", function() {
+
+		
+		mapsBody.style.display = "none";
+		backBtn.style.display = "inline-block";
+		mapInd = i;
+		if (i >= mapsBlocksList.length - 1){
+
+			emptyMapBlock.style.display = "block";
+			
+
+
+		} else {
+			mapsBlocksList[i].style.display = "block";
+			
+		}
+
+	});
+}
+
