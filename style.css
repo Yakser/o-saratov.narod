@@ -601,9 +601,6 @@ mark {
 
 
 
-
-
-
 /* BACK BUTTON */
 
 .back-button {
@@ -633,5 +630,3 @@ mark {
 .back-button:active {
  	outline: none;
 }
-
-
