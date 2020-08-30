@@ -1,15 +1,3 @@
-/*
-TODO
-
-тени при наведении на рекламу
-тени material design
-
-заполнить страницу с картами
-
-
-
-*/
-
 html {
   scroll-behavior: smooth;
 }
@@ -39,6 +27,7 @@ html, body {
 }
 .block {
 	display: none;
+	flex-direction: column;
 	padding: 10px;
 }
 .hidden {
@@ -129,7 +118,7 @@ aside {
 }
 
 .ads img:hover {
-	width: 200px;
+	transform: scale(1.1);
 	padding: 0;
 	
 	border-radius: 10px;
@@ -196,6 +185,7 @@ article {
 
 	margin-left: 15px;
 	margin-bottom: 15px;
+
 }
 
 .article-header {
@@ -203,7 +193,7 @@ article {
 	color: #FF8C00;
 }
 .article-content img {
-	width: 20%;
+	max-width: 400px;
 	border-radius: 5px;
 }
 
@@ -629,4 +619,100 @@ mark {
 }
 .back-button:active {
  	outline: none;
+}
+
+
+.federation {
+	flex-direction: column;
+	align-items: center;
+}
+
+.f__row ul {
+	text-align: left;
+	
+}
+
+.f__block {
+	display: none;
+}
+
+.f__block ul{
+	text-align: left;
+
+}
+
+
+/*ARTICLES BLOCK*/
+.articles {
+	flex-direction: column;
+	align-items: center;
+}
+.caption {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+
+}
+
+.articles__body {
+
+}
+.article__block {
+	display: none;
+	text-align: left;
+	margin: 0 50px;
+}
+.article__block .subheader {
+	text-align: center;
+}
+
+.articles__list {
+	text-align: left;
+	margin-top: 5px;
+
+}
+
+/*ARCHIVE*/
+.archive {
+	margin: 0 200px;
+}
+
+.archive__body {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.archive__item{
+	max-width: 300px;
+	background-color: white;
+	border-radius: 5px;
+	margin: 25px;
+	cursor: pointer;
+	transition: transform .3s ease-in-out;
+}
+.archive__item:hover{
+	transform: scale(1.05);
+}
+
+.archive__item img{
+	display: block;
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+.archive__block {
+	display: none;
+}
+
+.archive__block .subheader{
+	text-align: center;
+}
+.archive__block ul {
+	text-align: left;
+}
+.archive__block img{
+	display: inline-block;
+	max-width: 300px;
+	border-radius: 5px;
 }
