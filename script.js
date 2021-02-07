@@ -1,4 +1,3 @@
-
 // ------------------------ MENU ------------------------
 
 let itemsList = document.querySelectorAll('.menu-item');
@@ -34,9 +33,13 @@ let upButton = document.querySelector('.up-button');
 window.onscroll = function () {
   if (window.pageYOffset > 200) {
     upButton.classList.add('shown');
+    
+
   } else {
     upButton.classList.remove('shown');
+     
   }
+
 
 };
 
@@ -179,6 +182,197 @@ for(let i = 0; i < sliderBlocks.length; i++){
 
 				sliderBlocksHints[i].style.opacity = 0;
 				
+
+	});
+}
+
+
+// MAPS NAVIGATION
+
+let locationsList = document.querySelectorAll(".map-location");
+let mapsBody = document.querySelector(".maps__body");
+let mapsBlocksList = document.querySelectorAll(".map-block");
+let backBtn = document.querySelector(".back-button");
+let emptyMapBlock = document.querySelector(".empty-map-block");
+
+let mapInd = 0;
+
+
+backBtn.addEventListener("click", function() {
+
+		
+		mapsBody.style.display = "block";
+		backBtn.style.display = "none";
+		
+		
+		
+		mapsBlocksList[mapInd].style.display = "none";
+		emptyMapBlock.style.display = "none";
+	
+		
+
+		
+
+
+	
+	});
+
+
+for(let i = 0; i < locationsList.length; i++){
+
+	locationsList[i].addEventListener("click", function() {
+
+		
+		mapsBody.style.display = "none";
+		backBtn.style.display = "inline-block";
+		mapInd = i;
+		if (i >= mapsBlocksList.length - 1){
+
+			emptyMapBlock.style.display = "block";
+			
+
+
+		} else {
+			mapsBlocksList[i].style.display = "block";
+			
+		}
+
+	});
+}
+
+
+// FEDERATION NAVIGATION
+
+let f_body = document.querySelector(".f__body");
+let linksList = document.querySelectorAll(".f__link");
+let f_blocksList = document.querySelectorAll(".f__block");
+let f_backBtn = document.querySelector(".f__back-button");
+f_ind = 0;
+
+f_backBtn.addEventListener("click", function() {
+
+		
+		f_body.style.display = "block";
+		f_backBtn.style.display = "none";
+		
+		
+		
+		f_blocksList[f_ind].style.display = "none";
+		
+	});
+
+for(let i = 0; i < linksList.length; i++){
+
+	linksList[i].addEventListener("click", function() {
+
+		
+		f_body.style.display = "none";
+		f_backBtn.style.display = "inline-block";
+		f_blocksList[i].style.display = "block";
+		f_ind = i;
+		
+
+	});
+}
+
+
+// ARTICLES NAVIGATION
+
+let a_body = document.querySelector(".articles__body");
+let a_linksList = document.querySelectorAll(".article__link");
+let a_blocksList = document.querySelectorAll(".article__block");
+let a_backBtn = document.querySelector(".a__back-button");
+a_ind = 0;
+
+a_backBtn.addEventListener("click", function() {
+
+		
+		a_body.style.display = "block";
+		a_backBtn.style.display = "none";
+		
+		
+		
+		a_blocksList[a_ind].style.display = "none";
+		
+	});
+
+for(let i = 0; i < a_linksList.length; i++){
+
+	a_linksList[i].addEventListener("click", function() {
+
+		
+		a_body.style.display = "none";
+		a_backBtn.style.display = "inline-block";
+		a_blocksList[i].style.display = "block";
+		a_ind = i;
+		
+
+	});
+}
+
+// ARCHIVE NAVIGATION
+
+let archive_body = document.querySelector(".archive__body");
+let archive_linksList = document.querySelectorAll(".archive__item");
+let archive_blocksList = document.querySelectorAll(".archive__block");
+let archive_backBtn = document.querySelector(".archive__back-button");
+archive_ind = 0;
+
+archive_backBtn.addEventListener("click", function() {
+
+		
+		archive_body.style.display = "flex";
+		archive_backBtn.style.display = "none";
+		
+		
+		
+		archive_blocksList[archive_ind].style.display = "none";
+		
+	});
+
+for(let i = 0; i < archive_linksList.length; i++){
+
+	archive_linksList[i].addEventListener("click", function() {
+
+		
+		archive_body.style.display = "none";
+		archive_backBtn.style.display = "inline-block";
+		archive_blocksList[i].style.display = "block";
+		archive_ind = i;
+		
+
+	});
+}
+// PHOTOS NAVIGATION
+
+let photos_body = document.querySelector(".photos__body");
+let photos_linksList = document.querySelectorAll(".photos__item");
+let photos_blocksList = document.querySelectorAll(".photos__block");
+let photos_backBtn = document.querySelector(".photos__back-button");
+photos_ind = 0;
+
+photos_backBtn.addEventListener("click", function() {
+
+		
+		photos_body.style.display = "block";
+		photos_backBtn.style.display = "none";
+		
+		
+		
+		photos_blocksList[photos_ind].style.display = "none";
+		
+	});
+
+for(let i = 0; i < photos_linksList.length; i++){
+
+	photos_linksList[i].addEventListener("click", function() {
+
+		
+		photos_body.style.display = "none";
+		photos_backBtn.style.display = "inline-block";
+		photos_blocksList[i].style.display = "block";
+		photos_ind = i;
+		
 
 	});
 }
