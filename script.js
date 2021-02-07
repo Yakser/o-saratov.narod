@@ -16,12 +16,12 @@ for(let i = 0; i < itemsList.length; i++){
 			blocksList[ind].style.display = "none";
 			blocksList[i].style.display = "flex";
 			ind = i;
-		} 
-		
+		}
+
 		if (i == 0 || i == 3) blocksList[i].style.display = "block";
-		
-		
-		
+
+
+
 
 	});
 }
@@ -33,11 +33,11 @@ let upButton = document.querySelector('.up-button');
 window.onscroll = function () {
   if (window.pageYOffset > 200) {
     upButton.classList.add('shown');
-    
+
 
   } else {
     upButton.classList.remove('shown');
-     
+
   }
 
 
@@ -80,9 +80,9 @@ sliderBtnLeft.onclick = function () {
 
 sliderBtnRight.onclick = function () {
 
-	
+
 	pos -= blockWidth;
-	
+
 
 	if (pos >= -blockWidth * (num - 1)) {
 
@@ -93,7 +93,7 @@ sliderBtnRight.onclick = function () {
 		sliderLine.style.left = pos + "px";
 	}
 
-	
+
 }
 
 // slide if inactivity
@@ -162,7 +162,7 @@ slider.addEventListener("mouseout", function () {
 
 	sliderBtnLeft.style.opacity = 0;
 	sliderBtnRight.style.opacity = 0;
-	
+
 });
 
 
@@ -171,7 +171,7 @@ for(let i = 0; i < sliderBlocks.length; i++){
 	sliderBlocks[i].addEventListener("mouseover", function() {
 
 				sliderBlocksHints[i].style.opacity = 1;
-				
+
 
 	});
 }
@@ -181,7 +181,7 @@ for(let i = 0; i < sliderBlocks.length; i++){
 	sliderBlocks[i].addEventListener("mouseout", function() {
 
 				sliderBlocksHints[i].style.opacity = 0;
-				
+
 
 	});
 }
@@ -200,21 +200,21 @@ let mapInd = 0;
 
 backBtn.addEventListener("click", function() {
 
-		
+
 		mapsBody.style.display = "block";
 		backBtn.style.display = "none";
-		
-		
-		
+
+
+
 		mapsBlocksList[mapInd].style.display = "none";
 		emptyMapBlock.style.display = "none";
-	
-		
-
-		
 
 
-	
+
+
+
+
+
 	});
 
 
@@ -222,19 +222,19 @@ for(let i = 0; i < locationsList.length; i++){
 
 	locationsList[i].addEventListener("click", function() {
 
-		
+
 		mapsBody.style.display = "none";
 		backBtn.style.display = "inline-block";
 		mapInd = i;
 		if (i >= mapsBlocksList.length - 1){
 
 			emptyMapBlock.style.display = "block";
-			
+
 
 
 		} else {
 			mapsBlocksList[i].style.display = "block";
-			
+
 		}
 
 	});
@@ -251,26 +251,26 @@ f_ind = 0;
 
 f_backBtn.addEventListener("click", function() {
 
-		
+
 		f_body.style.display = "block";
 		f_backBtn.style.display = "none";
-		
-		
-		
+
+
+
 		f_blocksList[f_ind].style.display = "none";
-		
+
 	});
 
 for(let i = 0; i < linksList.length; i++){
 
 	linksList[i].addEventListener("click", function() {
 
-		
+
 		f_body.style.display = "none";
 		f_backBtn.style.display = "inline-block";
 		f_blocksList[i].style.display = "block";
 		f_ind = i;
-		
+
 
 	});
 }
@@ -286,26 +286,26 @@ a_ind = 0;
 
 a_backBtn.addEventListener("click", function() {
 
-		
+
 		a_body.style.display = "block";
 		a_backBtn.style.display = "none";
-		
-		
-		
+
+
+
 		a_blocksList[a_ind].style.display = "none";
-		
+
 	});
 
 for(let i = 0; i < a_linksList.length; i++){
 
 	a_linksList[i].addEventListener("click", function() {
 
-		
+
 		a_body.style.display = "none";
 		a_backBtn.style.display = "inline-block";
 		a_blocksList[i].style.display = "block";
 		a_ind = i;
-		
+
 
 	});
 }
@@ -320,26 +320,26 @@ archive_ind = 0;
 
 archive_backBtn.addEventListener("click", function() {
 
-		
+
 		archive_body.style.display = "flex";
 		archive_backBtn.style.display = "none";
-		
-		
-		
+
+
+
 		archive_blocksList[archive_ind].style.display = "none";
-		
+
 	});
 
 for(let i = 0; i < archive_linksList.length; i++){
 
 	archive_linksList[i].addEventListener("click", function() {
 
-		
+
 		archive_body.style.display = "none";
 		archive_backBtn.style.display = "inline-block";
 		archive_blocksList[i].style.display = "block";
 		archive_ind = i;
-		
+
 
 	});
 }
@@ -353,26 +353,26 @@ photos_ind = 0;
 
 photos_backBtn.addEventListener("click", function() {
 
-		
+
 		photos_body.style.display = "block";
 		photos_backBtn.style.display = "none";
-		
-		
-		
+
+
+
 		photos_blocksList[photos_ind].style.display = "none";
-		
+
 	});
 
 for(let i = 0; i < photos_linksList.length; i++){
 
 	photos_linksList[i].addEventListener("click", function() {
 
-		
+
 		photos_body.style.display = "none";
 		photos_backBtn.style.display = "inline-block";
 		photos_blocksList[i].style.display = "block";
 		photos_ind = i;
-		
+
 
 	});
 }
