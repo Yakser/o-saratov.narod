@@ -753,7 +753,7 @@ mark {
     /*flex-direction: column;*/
 }
 .photos__body li {
-    border: 1px solid #43a593;
+
     margin: 10px auto;
     max-width: 300px;
 }
