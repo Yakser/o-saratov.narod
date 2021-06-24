@@ -16,8 +16,7 @@ body {
 .wrapper {
   display: flex;
   justify-content: space-between;
-
-  height: 100%;
+  min-height: 100%;
 }
 
 .block {
@@ -710,4 +709,91 @@ mark {
 .photos__list img {
   width: 300px;
   display: block;
+}
+
+/* FOOTER */
+
+footer {
+  display: block;
+  background: rgba(0, 120, 215, .2);
+  padding: 40px 40%;
+
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 30px;
+  background: rgba(0, 120, 215, .2);
+  border-radius: 10000px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  backdrop-filter: blur(15px);
+  box-shadow: 2px 5px 5px 0px rgba(0, 120, 215, .2);
+
+}
+.social a {
+  width: 30px;
+  transition: .2s ease-in;
+ 
+}
+
+.social a img {
+  width: 30px;
+  filter: invert();
+  
+}
+
+.social a:hover {
+  transform: scale(1.1);
+}
+
+.refs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+  position: absolute;
+  opacity: 0;
+  left: 0px;
+  width: 0%;
+  bottom: -40px;
+  /* border: 1px solid rgba(0, 0, 0, .2); */
+  padding: 5px;
+  /* background: rgba(0, 0, 0, .2); */
+  background: rgba(0, 120, 215, .2);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  transition: .2s ease-in;
+  /* box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, .1); */
+  box-shadow: 2px 5px 5px 0px rgba(0, 120, 215, .2);
+  
+}
+
+.refs a img {
+  width: 20px;
+  margin: 5px;
+  filter: invert();
+  transition: .2s ease-in;
+}
+.refs a img:hover {
+  transform: scale(1.1);
+}
+
+.copyright {
+  text-align: center;
+}
+.copyright span i {
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+.copyright span i:hover{
+  
+}
+.copyright span i:hover .refs{
+  opacity: 1;
+  width: 100%;
 }
